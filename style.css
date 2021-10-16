@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contain {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/q.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.heading {
+  float: left;
+  padding: 15px;
+  color: #ff5ef7;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 250px;
+  margin-left: 160px;
+  font-size: 43px;
+}
+.heading2 {
+  float: left;
+  padding: 10px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  margin-top: 197px;
+  margin-left: -455px;
+}
+.heading3 {
+  float: left;
+  padding: 10px;
+  color: #88ff55;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-top: 455px;
+  margin-left: -455px;
+}
+.learn {
+  color: #88ff55;
+  font-size: 14px;
+  text-decoration: none;
+  border-style: outset;
+  padding: 4px;
+  background-color: #ff25f4;
+  font-weight: bold;
+}
+.navbar {
+  padding: 5px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -565px;
+  margin-left: 1005px;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+  font-family: "Ubuntu", sans-serif;
+  color: #88ff55;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.navbar ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: ease-in 0.3s;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.navbar :hover {
+  color: white;
+}
+.navbar ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
